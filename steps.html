@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="left">
+                <h2>DocSInfo</h2>
+            </div>
+            <div class="center">
+                <form action="">
+                    <input type="text" placeholder='Passport, visas, legal documents...'>
+                    <button class='search'>Search</button>
+                </form>
+            </div>
+            <div class="right">
+                <span class='menu' id='menu-button'>
+                    <ion-icon name="reorder-three-outline"></ion-icon>
+                </span>
+            </div>
+        </div>
+    </header>
+
+
+    <section class='steps-page'>
+        <div class="container">
+            <h2>Steps to obtain this document</h2>
+            <ol>
+                <li> Go to registrar and get certificate of birth</li>
+                <li> Get a heath insurance document</li>
+                <li> Get bank statement</li>
+            </ol>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <div class="offcanvas-menu" id='offcanvas'>
+        <div class="menu-container">
+            <a href="#" class='close' id='close-button'><ion-icon name="close-outline"></ion-icon></a>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script src='js/general.js'></script>
+</body>
+</html>

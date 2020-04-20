@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</head>
+<body>
+    
+    <header>
+        <div class="nav">
+            <div class="left">
+                <h2><a href='index.html'>DocSInfo</a></h2>
+            </div>
+            <div class="center">
+                <form action="">
+                    <input type="text" placeholder='Passport, visas, legal documents...'>
+                    <button class='search'>Search</button>
+                </form>
+            </div>
+            <div class="right">
+                <span class='menu' id='menu-button'>
+                    <ion-icon name="reorder-three-outline"></ion-icon>
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <section class="results">
+        <div class="filter-wrapper">
+            <div class="filter-container">
+                <div class="filter-grid">
+                    <div data-choice="all" class="filter-choice filterActive">All</div>
+                    <div data-choice="citizen" class="filter-choice">Citizen documents<span class='abbr CD'>(CD)</span></div>
+                    <div data-choice="visas" class="filter-choice">Visas<span class='abbr VI'>(VI)</span></div>
+                    <div data-choice="business" class="filter-choice">Business<span class='abbr BS'>(BS)</span></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="card-grid">
+                <div class='card-wrapper citizen'>
+                    <a href='steps.html' class="card-item">
+                        <div class="top">
+                            <img src="img/id-card.png" alt="">
+                        </div>
+                        <div class="text-container">
+                            <h3>Get a national identification(ID) passport</h3>
+                            <p>Short step-description</p>
+                        </div>
+                    </a>
+                </div>
+                <div class='card-wrapper citizen'>
+                    <a href='steps.html' class="card-item">
+                        <div class="top">
+                            <img src="img/id-card.png" alt="">
+                        </div>
+                        <div class="text-container">
+                            <h3>Get a national identification(ID) passport</h3>
+                            <p>Short step-description</p>
+                        </div>
+                    </a>
+                </div>
+                <div class='card-wrapper citizen'>
+                    <a href='steps.html' class="card-item">
+                        <div class="top">
+                            <img src="img/id-card.png" alt="">
+                        </div>
+                        <div class="text-container">
+                            <h3>Get a national identification(ID) passport</h3>
+                            <p>Short step-description</p>
+                        </div>
+                    </a>
+                </div>
+                <div class='card-wrapper visas'>
+                    <a href='steps.html' class="card-item">
+                        <div class="top">
+                            <img src="img/docs.png" alt="">
+                        </div>
+                        <div class="text-container">
+                            <h3>Visas</h3>
+                            <p>Short step-description</p>
+                        </div>
+                    </a>
+                </div>
+                <div class='card-wrapper business'>
+                    <a href='steps.html' class="card-item">
+                        <div class="top">
+                            <img src="img/pass.png" alt="">
+                        </div>
+                        <div class="text-container">
+                            <h3>Get a business legal documents</h3>
+                            <p>Short step-description</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <div class="offcanvas-menu" id='offcanvas'>
+        <div class="menu-container">
+            <a href="#" class='close' id='close-button'><ion-icon name="close-outline"></ion-icon></a>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src='js/general.js'></script>
+    <script src='js/index.js'></script>
+</body>
+</html>
